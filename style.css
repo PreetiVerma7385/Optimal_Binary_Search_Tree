@@ -1,63 +1,229 @@
+/* General Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+/* Body Styling */
 body {
-font-family: Arial, sans-serif;
-background-color: #f0f4f8;
-color: #1e293b;
-text-align: center;
-margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+background: linear-gradient(135deg, #eaf2ff, #f5f7fb);
+color: #263238;
+line-height: 1.6;
+min-height: 100vh;
 }
 
-h1 {
-background-color: #17365d;
+/* Header */
+header {
+background: linear-gradient(135deg, #142b5f, #2855a6);
 color: white;
-padding: 25px;
-margin-top: 0;
+text-align: center;
+padding: 30px 15px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+header h1 {
+font-size: 34px;
+margin-bottom: 8px;
+letter-spacing: 0.5px;
+}
+
+header p {
+font-size: 18px;
+color: #e4ecff;
+}
+
+/* Main Container */
 .container {
-background: white;
-max-width: 600px;
-margin: 30px auto;
-padding: 25px;
-border-radius: 10px;
-box-shadow: 0 3px 10px #cccccc;
+width: 90%;
+max-width: 900px;
+margin: 35px auto;
 }
 
+/* Sections */
+.input-section,
+.result-section,
+.information {
+background: white;
+padding: 28px;
+margin-bottom: 25px;
+border-radius: 12px;
+box-shadow: 0 5px 18px rgba(25, 45, 80, 0.10);
+}
+
+/* Section Headings */
+h2 {
+color: #193b78;
+text-align: center;
+margin-bottom: 22px;
+font-size: 25px;
+}
+
+h3 {
+color: #2855a6;
+margin-top: 22px;
+margin-bottom: 10px;
+}
+
+/* Form Labels */
 label {
 display: block;
-margin-top: 20px;
 font-weight: bold;
+margin: 18px 0 8px;
+color: #34445e;
 }
 
-input {
-width: 90%;
-padding: 12px;
-margin-top: 8px;
-border: 1px solid #aaa;
-border-radius: 5px;
+/* Input Fields */
+input[type="text"] {
+width: 100%;
+padding: 13px 14px;
+border: 1px solid #cbd5e1;
+border-radius: 7px;
+font-size: 16px;
+background: #fbfdff;
+transition: border-color 0.2s, box-shadow 0.2s;
 }
 
+input[type="text"]:focus {
+outline: none;
+border-color: #2878d0;
+box-shadow: 0 0 0 3px rgba(40, 120, 208, 0.15);
+}
+
+/* Calculate Button */
 button {
-background-color: #176b87;
+display: block;
+margin: 25px auto 8px;
+padding: 13px 28px;
+background: #168ac4;
 color: white;
-padding: 12px 20px;
-margin-top: 25px;
 border: none;
-border-radius: 5px;
+border-radius: 8px;
+font-size: 16px;
+font-weight: bold;
 cursor: pointer;
+transition: background 0.2s, transform 0.2s;
 }
 
 button:hover {
-background-color: #12546a;
+background: #106ca0;
+transform: translateY(-2px);
 }
 
-#tree {
-margin-top: 25px;
-font-size: 20px;
+button:active {
+transform: translateY(0);
+}
+
+button:focus-visible {
+outline: 3px solid #8bc8f2;
+outline-offset: 3px;
+}
+
+/* Error Message */
+#errorMessage {
+color: #c62828;
+text-align: center;
 font-weight: bold;
+margin-top: 12px;
 }
 
-@media (max-width: 650px) {
-.container {
-margin: 20px 10px;
+/* Results */
+.result-section p {
+background: #f0f6ff;
+padding: 13px 15px;
+margin: 12px 0;
+border-left: 4px solid #2855a6;
+border-radius: 5px;
+font-size: 17px;
 }
+
+#minCost,
+#optimalRoot {
+color: #087b45;
+font-weight: bold;
+margin-left: 5px;
+}
+
+/* Tree Structure */
+#treeStructure {
+background: #f5f8fc;
+border: 1px solid #dbe4f0;
+padding: 18px;
+border-radius: 8px;
+white-space: pre-wrap;
+overflow-wrap: anywhere;
+font-family: Consolas, monospace;
+font-size: 15px;
+color: #263b5b;
+min-height: 50px;
+}
+
+/* Information Section */
+.information p {
+margin-bottom: 15px;
+text-align: justify;
+}
+
+.information ul {
+margin-left: 25px;
+margin-bottom: 15px;
+}
+
+.information li {
+margin-bottom: 7px;
+}
+
+/* Footer */
+footer {
+background: #142b5f;
+color: white;
+text-align: center;
+padding: 18px 12px;
+margin-top: 40px;
+}
+
+footer p {
+font-size: 14px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+header {
+padding: 24px 12px;
+}
+
+header h1 {
+    font-size: 26px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+.container {
+    width: 94%;
+    margin: 20px auto;
+}
+
+.input-section,
+.result-section,
+.information {
+    padding: 18px;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+input[type="text"] {
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+}
+
 }
