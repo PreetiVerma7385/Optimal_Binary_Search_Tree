@@ -1,229 +1,303 @@
 /* General Reset */
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* Body Styling */
 body {
-font-family: Arial, Helvetica, sans-serif;
-background: linear-gradient(135deg, #eaf2ff, #f5f7fb);
-color: #263238;
-line-height: 1.6;
-min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #eaf2ff, #f5f7fb);
+    color: #263238;
+    line-height: 1.6;
+    min-height: 100vh;
 }
 
-/* Header */
-header {
-background: linear-gradient(135deg, #142b5f, #2855a6);
-color: white;
-text-align: center;
-padding: 30px 15px;
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+/* College Header */
+.college-header {
+    background: linear-gradient(135deg, #142b5f, #2855a6);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-header h1 {
-font-size: 34px;
-margin-bottom: 8px;
-letter-spacing: 0.5px;
+.college-header h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 8px;
 }
 
-header p {
-font-size: 18px;
-color: #e4ecff;
+.college-header .department {
+    color: #dce8ff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.college-header h1 {
+    color: white;
+    font-size: 36px;
+    margin: 18px 0;
+    letter-spacing: 0.5px;
+}
+
+.college-header .subject {
+    color: #e4ecff;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+/* Student Information Card */
+.student-info {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 5px solid #52d6e8;
+    padding: 15px 20px;
+    margin: 20px auto 0;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.student-info p {
+    color: #e4ecff;
+    font-size: 15px;
+}
+
+.student-info h2 {
+    color: white;
+    font-size: 24px;
+    margin: 5px 0;
 }
 
 /* Main Container */
 .container {
-width: 90%;
-max-width: 900px;
-margin: 35px auto;
+    width: 90%;
+    max-width: 900px;
+    margin: 35px auto;
 }
 
 /* Sections */
 .input-section,
 .result-section,
 .information {
-background: white;
-padding: 28px;
-margin-bottom: 25px;
-border-radius: 12px;
-box-shadow: 0 5px 18px rgba(25, 45, 80, 0.10);
+    background: white;
+    padding: 28px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(25, 45, 80, 0.10);
 }
 
 /* Section Headings */
 h2 {
-color: #193b78;
-text-align: center;
-margin-bottom: 22px;
-font-size: 25px;
+    color: #193b78;
+    text-align: center;
+    margin-bottom: 22px;
+    font-size: 25px;
 }
 
 h3 {
-color: #2855a6;
-margin-top: 22px;
-margin-bottom: 10px;
+    color: #2855a6;
+    margin-top: 22px;
+    margin-bottom: 10px;
 }
 
 /* Form Labels */
 label {
-display: block;
-font-weight: bold;
-margin: 18px 0 8px;
-color: #34445e;
+    display: block;
+    font-weight: bold;
+    margin: 18px 0 8px;
+    color: #34445e;
 }
 
 /* Input Fields */
 input[type="text"] {
-width: 100%;
-padding: 13px 14px;
-border: 1px solid #cbd5e1;
-border-radius: 7px;
-font-size: 16px;
-background: #fbfdff;
-transition: border-color 0.2s, box-shadow 0.2s;
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 16px;
+    background: #fbfdff;
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 input[type="text"]:focus {
-outline: none;
-border-color: #2878d0;
-box-shadow: 0 0 0 3px rgba(40, 120, 208, 0.15);
+    outline: none;
+    border-color: #2878d0;
+    box-shadow: 0 0 0 3px rgba(40, 120, 208, 0.15);
 }
 
 /* Calculate Button */
 button {
-display: block;
-margin: 25px auto 8px;
-padding: 13px 28px;
-background: #168ac4;
-color: white;
-border: none;
-border-radius: 8px;
-font-size: 16px;
-font-weight: bold;
-cursor: pointer;
-transition: background 0.2s, transform 0.2s;
+    display: block;
+    margin: 25px auto 8px;
+    padding: 13px 28px;
+    background: #168ac4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
 }
 
 button:hover {
-background: #106ca0;
-transform: translateY(-2px);
+    background: #106ca0;
+    transform: translateY(-2px);
 }
 
 button:active {
-transform: translateY(0);
+    transform: translateY(0);
 }
 
 button:focus-visible {
-outline: 3px solid #8bc8f2;
-outline-offset: 3px;
+    outline: 3px solid #8bc8f2;
+    outline-offset: 3px;
 }
 
 /* Error Message */
 #errorMessage {
-color: #c62828;
-text-align: center;
-font-weight: bold;
-margin-top: 12px;
+    color: #c62828;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 12px;
 }
 
 /* Results */
 .result-section p {
-background: #f0f6ff;
-padding: 13px 15px;
-margin: 12px 0;
-border-left: 4px solid #2855a6;
-border-radius: 5px;
-font-size: 17px;
+    background: #f0f6ff;
+    padding: 13px 15px;
+    margin: 12px 0;
+    border-left: 4px solid #2855a6;
+    border-radius: 5px;
+    font-size: 17px;
 }
 
 #minCost,
 #optimalRoot {
-color: #087b45;
-font-weight: bold;
-margin-left: 5px;
+    color: #087b45;
+    font-weight: bold;
+    margin-left: 5px;
 }
 
 /* Tree Structure */
 #treeStructure {
-background: #f5f8fc;
-border: 1px solid #dbe4f0;
-padding: 18px;
-border-radius: 8px;
-white-space: pre-wrap;
-overflow-wrap: anywhere;
-font-family: Consolas, monospace;
-font-size: 15px;
-color: #263b5b;
-min-height: 50px;
+    background: #f5f8fc;
+    border: 1px solid #dbe4f0;
+    padding: 18px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    font-family: Consolas, monospace;
+    font-size: 15px;
+    color: #263b5b;
+    min-height: 50px;
+    overflow-x: auto;
 }
 
 /* Information Section */
 .information p {
-margin-bottom: 15px;
-text-align: justify;
+    margin-bottom: 15px;
+    text-align: justify;
 }
 
 .information ul {
-margin-left: 25px;
-margin-bottom: 15px;
+    margin-left: 25px;
+    margin-bottom: 15px;
 }
 
 .information li {
-margin-bottom: 7px;
+    margin-bottom: 7px;
 }
 
 /* Footer */
-footer {
-background: #142b5f;
-color: white;
-text-align: center;
-padding: 18px 12px;
-margin-top: 40px;
+.student-footer {
+    background: #142b5f;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+    border-top: 4px solid #52d6e8;
 }
 
-footer p {
-font-size: 14px;
+.student-footer h3 {
+    color: #c9dcff;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.student-footer h2 {
+    color: white;
+    font-size: 24px;
+    margin: 5px 0 12px;
+}
+
+.student-footer p {
+    color: #e4ecff;
+    font-size: 14px;
+    margin: 5px 0;
 }
 
 /* Responsive Design for Mobile */
 @media (max-width: 600px) {
-header {
-padding: 24px 12px;
-}
+    .college-header {
+        padding: 25px 12px;
+    }
 
-header h1 {
-    font-size: 26px;
-}
+    .college-header h2 {
+        font-size: 17px;
+    }
 
-header p {
-    font-size: 16px;
-}
+    .college-header .department {
+        font-size: 15px;
+    }
 
-.container {
-    width: 94%;
-    margin: 20px auto;
-}
+    .college-header h1 {
+        font-size: 27px;
+    }
 
-.input-section,
-.result-section,
-.information {
-    padding: 18px;
-}
+    .college-header .subject {
+        font-size: 15px;
+    }
 
-h2 {
-    font-size: 21px;
-}
+    .student-info {
+        padding: 12px;
+    }
 
-input[type="text"] {
-    font-size: 15px;
-}
+    .student-info h2 {
+        font-size: 21px;
+    }
 
-button {
-    width: 100%;
-    padding: 14px;
-}
+    .container {
+        width: 94%;
+        margin: 20px auto;
+    }
 
+    .input-section,
+    .result-section,
+    .information {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    input[type="text"] {
+        font-size: 15px;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .student-footer {
+        padding: 20px 12px;
+    }
+
+    .student-footer h2 {
+        font-size: 21px;
+    }
 }
