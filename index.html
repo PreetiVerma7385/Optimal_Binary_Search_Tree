@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimal Binary Search Tree</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><h1>Optimal Binary Search Tree</h1>
+<p>Dynamic Programming Project</p>
+
+<div class="container">
+    <label>Enter sorted keys (comma-separated):</label>
+    <input type="text" id="keys" value="10,20,30">
+
+    <label>Enter search probabilities:</label>
+    <input type="text" id="probabilities" value="0.3,0.2,0.5">
+
+    <button onclick="calculateOBST()">Calculate Optimal BST</button>
+
+    <h2 id="cost">Minimum Cost: </h2>
+    <h2 id="root">Optimal Root: </h2>
+    <div id="tree"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
